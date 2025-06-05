@@ -1,19 +1,17 @@
-import Greetings from "./component/Greetings";
-import ProductInfo from "./component/ProductInfo";
+
 const App = () => {
-  const myName = 'Huxn WebDev';
-  const multiply = (a,b) => a * b
-  const specialClass = 'simple-class'
+  const numbers =  [1,2,3,4,5]
   return (
-    <section id = "section">
-      <p> {2+2} </p>
-      <h1>{myName} </h1>
-      <p>My friends List: {['Alex', 'John', 'Jordan']}</p>
-      <p>2 * 10 = {multiply(2,10)}</p>
-      <p className={specialClass}>This is a special class</p>
-      <Greetings/>
-      <ProductInfo/>
-    </section>
+    <main >
+      <h1>Rendering List in React</h1>
+      {
+        numbers.map((num)=>{
+          return <ul>
+            <li key={Math.random()* numbers.length}>{num}</li>
+          </ul>
+        })
+      }
+    </main>
   )
 }
 
