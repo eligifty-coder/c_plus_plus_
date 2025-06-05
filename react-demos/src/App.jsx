@@ -1,18 +1,18 @@
-import Add from './component/Add';
-import Footer from './component/Footer';
-import Header from './component/Header';
-import WelcomeMessage from './component/WelcomeMessage';
-import JsxRules from './JsxRules';
+import Greetings from "./component/Greetings";
+import ProductInfo from "./component/ProductInfo";
 const App = () => {
+  const myName = 'Huxn WebDev';
+  const multiply = (a,b) => a * b
+  const specialClass = 'simple-class'
   return (
     <section id = "section">
-      <WelcomeMessage/>
-      <h1>My Website</h1>
-      <article>
-        <h2>Welcome to React</h2>
-        <p className="text">Paragraph Content</p>
-        <JsxRules/>
-      </article>
+      <p> {2+2} </p>
+      <h1>{myName} </h1>
+      <p>My friends List: {['Alex', 'John', 'Jordan']}</p>
+      <p>2 * 10 = {multiply(2,10)}</p>
+      <p className={specialClass}>This is a special class</p>
+      <Greetings/>
+      <ProductInfo/>
     </section>
   )
 }
