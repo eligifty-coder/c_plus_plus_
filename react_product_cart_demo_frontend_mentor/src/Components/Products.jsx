@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Products = () => {
+const Products = ({items,setItems}) => {
+
+    const mappedItems = items.map((item, index)=>{
+        return <li key = {index}>
+            {item.display}
+        </li>
+    })
     return (
-    <div>Products</div>
+    <div>{mappedItems}</div>
     )
 }
 
