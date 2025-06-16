@@ -1,0 +1,9 @@
+.products{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    grid-gap:3.21vw ;
+    grid-template-columns: auto 1fr;
+}

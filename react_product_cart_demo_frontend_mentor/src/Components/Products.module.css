@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+
+
+@media screen and (min-width:602px) {
+    .products{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap:3.21vw ;
+    }
+    .productDisplay{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:3.21vw ;
+    }
+    .productDisplay li{
+        list-style-type: none;
+    }
+}
