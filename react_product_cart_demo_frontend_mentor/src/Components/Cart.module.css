@@ -1,0 +1,28 @@
+.cart{
+    border-radius: 0.9vw;
+    background: rgb(255,255,255);
+    padding:1vw 1.6vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.6vw;
+}
+.cart p{
+    font-size: 1vw;
+    text-align: center;
+    color: rgb(150,134,134);
+    padding-bottom:1vw;
+}
+
+.cart h2{
+    font-size: 1.6vw;
+    color: rgb(177,47,33);
+}
+.img{
+    width: 65%;
+    margin: auto;
+}
+.img img{
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+}

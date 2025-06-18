@@ -11,22 +11,63 @@
         width: 100%;
         object-fit: cover;
         padding: 0;
-        border-radius: 1.5vw;
+        border-radius: 0.9vw;
         
     }
     .text{
         display: grid;
         grid-template-columns: 1fr;
-        row-gap:0.5vw ;
+        row-gap:0.3vw ;
     }
     .text h5{
         color: rgb(53,42,38);
+        
 
     }
     .category{
         color: rgb(179,168,166);
+        font-size: 1.25vw;
+    }
+    .price{
+        color: rgb(183,83,83);
+        font-size: 1.25vw;
     }
     .name{
-        color: rgb(183,83,83);
+        font-size: 1.25vw;
     }
+    .card button img{
+        width: 2vw;
+
+    }
+    .positionedEle{
+        position: relative;
+    }
+    .card button {
+        border: 0.1vw solid rgb(179, 161, 161);
+        background-color: rgb(255,255,255);
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        justify-content: center;
+        place-items: center;
+        border-radius: 2vw;
+        padding: 1vw;
+        column-gap: 0.9vw;
+        font-size: 1.25vw;
+        font-weight: bold;
+        width: 70%;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor:pointer;
+        z-index: 1;
+    }
+    .card button:active{
+        background-color: rgb(185,49,14);
+        cursor: pointer;
+        border: none;
+    }
+    
 }

@@ -9,8 +9,6 @@ const ProductCart = () => {
     const [items, setItems] = useState(data)
     const [count, setCount] = useState(0)
     const [screenSize, setScreenSize] = useState(window.innerWidth)
-    
-    console.log(screenSize,'screenSize')
     // create an event listener
     useEffect(() => {
         window.addEventListener("resize", ()=>handleResize(screenSize, setScreenSize))
@@ -46,11 +44,13 @@ const ProductCart = () => {
             })
         })
     },[screenSize])
-    console.log(items,'prev')
+
     return (
-    <div className={classes.products}>
-        <Products items={items} setItems={setItems} />
+    <div className={classes.productBg}>
+        <div className={classes.products}>
+        <Products items={items} setItems={setItems} count ={count} setCount= {setCount}  />
         <Cart/>
+    </div>
     </div>
     )
 }

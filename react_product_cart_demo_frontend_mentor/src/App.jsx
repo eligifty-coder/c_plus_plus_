@@ -6,8 +6,6 @@ import ProductCart from './Components/ProductCart'
 const App = () => {
   return (
     <>
-    <div>App</div>
-
     <ProductCart/>
     </>
   )

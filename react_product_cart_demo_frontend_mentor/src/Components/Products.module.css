@@ -16,7 +16,7 @@
     .productDisplay{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap:3.21vw ;
+        grid-gap:1.6vw
     }
     .productDisplay li{
         list-style-type: none;
