@@ -21,6 +21,17 @@ export const modifyData = (items, setItems)=>{
     
 }
 
+export const  modify = (setItems)=>{
+    setItems(prev=>{
+        return prev.map(data=>{
+            return {
+                ...data,
+                count:0,
+                id: data.name+ Math.random() * prev.length,
+            }
+        })
+    })
+}
 
 export const handleResize = (screenSize, setScreenSize) => {
     

@@ -1,0 +1,17 @@
+
+
+@media screen and (min-width:602px) {
+    .productBg{
+        width: 100%;
+        padding-top: 2vw;
+    }
+    .products{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        grid-gap:1.8vw ;
+        grid-template-columns: auto 1fr;
+    }
+}
