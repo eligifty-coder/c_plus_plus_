@@ -49,7 +49,7 @@ const ProductCart = () => {
     <div className={classes.productBg}>
         <div className={classes.products}>
         <Products items={items} setItems={setItems} count ={count} setCount= {setCount}  />
-        <Cart/>
+        <Cart items={items} />
     </div>
     </div>
     )

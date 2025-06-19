@@ -49,7 +49,7 @@ const Card = ({item,setCount,count,items,setItems}) => {
             <section className={classes.text}>
                 <span className={classes.category}>{item.category}</span>
                 <h5 className={classes.name}>{item.name}</h5>
-                <span className={classes.price}>${item.price}</span>
+                <span className={classes.price}>${(item.price).toFixed(2)}</span>
             </section>
         </li>
     )
