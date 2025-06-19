@@ -7,6 +7,9 @@
         grid-template-columns: 1fr;
         row-gap:3.21vw ;
     }
+    .borderedProduct{
+        border: 0.19vw  solid rgb(185, 40,14);;
+    }
     .card img{
         width: 100%;
         object-fit: cover;
@@ -79,7 +82,7 @@
         align-items: center;
     }
     .card .btnStyle button{
-        background-color: rgb(185, 40,14);;
+        background-color: rgb(185, 40,14);
         border: 0.1vw solid rgb(255, 255, 255);
         border-radius: 100%;
         display: grid;

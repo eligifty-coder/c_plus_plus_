@@ -42,8 +42,8 @@ const Card = ({item,setCount,count,items,setItems}) => {
     return (
         
         <li className={classes.card}>
-            <div className={classes.positionedEle}>
-            <img src={item.display} alt="load" />
+            <div className= {classes.positionedEle}>
+            <img src={item.display} alt="load" className={`${item.count? classes.borderedProduct:''}`} />
             {displayBtn}
             </div>
             <section className={classes.text}>
