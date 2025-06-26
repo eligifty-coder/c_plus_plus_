@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import classes from './Cards.module.css'
 const Card = ({item,setCount,count,items,setItems}) => {
-    const [toggleBtn, setToggleBtn] = useState(false)
     const handleCartButton = (e, item)=>{
         e.preventDefault()
         setItems(prev=>prev.map(ele=>{
