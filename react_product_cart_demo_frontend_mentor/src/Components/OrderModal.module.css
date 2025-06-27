@@ -1,0 +1,109 @@
+.orderModal{
+    position: absolute;
+    z-index: 3;
+    right: 25%;
+    top: 25%;
+    width: 45vw;
+    background: rgb(255,255,255);
+    padding: 2vw;
+    display: grid;
+    align-items: center;
+    row-gap: 2vw;
+    border-radius: 1vw;
+}
+.orderLists{
+    background-color: rgb(251,246,243);
+    border-radius: 0.2vw;
+    padding: 1vw;
+    display: grid;
+    row-gap: 1vw;
+    
+}
+.orderList{
+    list-style: none;
+    border-bottom: 0.2vw solid rgb(245,245,245);
+    padding: 1vw ;
+}
+.header{
+    display: grid;
+    align-items: center;
+    row-gap: 0.5vw;
+}
+
+.header img{
+    width: 2vw;
+    height: 100%;
+    object-fit: cover;
+}
+.header h2{
+    color:rgb(24,10,6);
+    font-size: 2vw;
+}
+
+.header span{
+    font-size: 1.2vw;
+    color: rgb(160,150,149);
+}
+.orderDetails {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+.orderDetails .details{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 1vw;
+}
+.orderDetails img{
+    width: 4vw;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 2vw;
+}
+.orderDetails h5{
+    font-size: 1vw;
+    color: rgb(74,67,65);
+}
+.orderDetails span, .orderDetails .price{
+    font-size: 1vw;
+    color: rgb(148,131,128);
+}
+.orderDetails .redSpan{
+    color: rgb(165, 73, 59);
+    font-weight: bold;
+    display: inline-block;
+}
+.orderDetails .total{
+    font-weight: bold;
+    padding-left: 0.2vw;
+    font-size: 1.2vw;
+}
+
+.orderTotal{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 1vw;
+}
+.orderTotal span{
+    font-size: 1vw;
+    color: rgb(114,119,109);
+}
+.orderTotal h3{
+    font-size: 1.2vw;
+    color: rgb(22,9,5);
+    font-weight: bold;
+}
+.confirmOrder {
+    border:none ;
+    border-radius: 1.2vw;
+    background: rgb(185,40,14);
+    padding: 1vw;
+    color: rgb(255,255,255);
+    font-size: 1vw;
+    transition: opacity 0.2s;
+}
+.ConfirmOrder:hover{
+    opacity: 0.9;
+}

@@ -81,6 +81,17 @@ export  const  handleScreenSizeChange = (items,screenSize,setItems)=>{
             }
         }
     })
-    console.log(items,'newData1')
+
     setItems(newData)
+}
+
+// working functions
+export const totalOrder = (items, initialValue) => {
+
+    return items.reduce((acc,cur) => acc + (cur.count * cur.price), initialValue)
+}
+
+// confirm Order
+export const confirmOrder = (setOrderModal) =>{
+    setOrderModal(val=> !val )
 }
