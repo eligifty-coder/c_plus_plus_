@@ -1,6 +1,8 @@
 import React from 'react'
 import classes from './Cart.module.css'
-const Cart = ({items,setItems}) => {
+import {totalOrder,confirmOrder} from './functionFile.js'
+import OrderModal from './OrderModal.jsx'
+const Cart = ({items,setItems,setOrderModal}) => {
     const handleDecrement = (e, item)=>{
         e.preventDefault()
         setItems(prev=>prev.map(ele=>{
@@ -16,7 +18,7 @@ const Cart = ({items,setItems}) => {
     }
     const initialValue  = 0
     const totalProductCount = items.reduce((acc,cur) => acc + cur.count, initialValue)
-    const totalOrder = items.reduce((acc,cur) => acc + (cur.count * cur.price), initialValue)
+    const totalOrders = totalOrder(items,initialValue)
 
     const cartItems = items.map((ele,id)=>{
         if(ele.count){
@@ -32,12 +34,18 @@ const Cart = ({items,setItems}) => {
         }
     })
     const cartEmpty  =  <div className={classes.cartOrder}>
-    
     <div className={classes.img}>
     <img src="../../illustration-empty-cart.svg" alt="" />
     </div>
     <p>Your added items will appear here</p>
     </div>
+
+
+// confirm Order
+const HandleConfirmOrders = (e,setOrderModal) =>{
+    e.preventDefault()
+    confirmOrder(setOrderModal)
+}
     return (
     <div className={classes.cart}>
         <h2>Your Cart ({totalProductCount})</h2>
@@ -45,10 +53,10 @@ const Cart = ({items,setItems}) => {
         {totalProductCount? <div className={classes.ConfirmOrder}>
             <div className={classes.orderTotal}>
                 <span>Order Total</span>
-                <h3>${totalOrder} </h3>
+                <h3>${totalOrders.toFixed(2)} </h3>
             </div>
             <div className={classes.carbon}> <p>  <img src="../../../icon-carbon-neutral.svg" alt="" />This is  a <span> carbon-neutral </span> delivery</p> </div>
-            <button>Confirm Order</button>
+            <button onClick={e=>HandleConfirmOrders(e,setOrderModal)}>Confirm Order</button>
         </div>:''}
     </div>
     )
