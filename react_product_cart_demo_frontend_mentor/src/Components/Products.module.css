@@ -4,8 +4,9 @@
     box-sizing: border-box;
     }
 
-
-
+    .products{
+        padding: 3vw 0;
+    }
 @media screen and (min-width:602px) {
     .products{
         width: 100%;

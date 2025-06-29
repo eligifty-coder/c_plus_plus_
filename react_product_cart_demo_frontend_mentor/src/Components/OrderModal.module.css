@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 3;
     right: 25%;
-    top: 25%;
+    top: 10%;
     width: 45vw;
     background: rgb(255,255,255);
     padding: 2vw;
@@ -10,6 +10,8 @@
     align-items: center;
     row-gap: 2vw;
     border-radius: 1vw;
+    overflow-y: auto;
+    height: 50vw;
 }
 .orderLists{
     background-color: rgb(251,246,243);

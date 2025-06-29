@@ -1,7 +1,6 @@
 
 .productBg{
     width: 100%;
-    /* padding-top: 2vw; */
     position: relative;
 }
 @media screen and (min-width:602px) {

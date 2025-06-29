@@ -1,3 +1,10 @@
+.cart{
+    margin:3vw 0 ;
+    overflow-y: auto;
+    height: 30vw;
+
+}
+
 @media screen and (min-width:602px) {
     .cart{
         border-radius: 0.9vw;
